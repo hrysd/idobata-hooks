@@ -1,0 +1,17 @@
+%h4 Headers:
+
+%table
+  %tbody
+    - payload[:headers].each do |k, v|
+      %tr
+        %th= k
+        %td= v
+
+%h4 Body:
+
+%table
+  %tbody
+    - payload[:body].each do |k, v|
+      %tr
+        %th= k
+        %td= v
