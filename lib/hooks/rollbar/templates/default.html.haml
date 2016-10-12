@@ -1,4 +1,4 @@
 %span.label.label-danger= payload.event_name
 
-%p
-  = payload.item.title
+- if payload.item
+  %p= payload.item.title
